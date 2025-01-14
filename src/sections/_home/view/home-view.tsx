@@ -1,5 +1,16 @@
 "use client";
 
+// import { ScrollProgress, useScrollProgress } from "@/components/animate";
+import { HomeHero } from "../home-hero";
+
+//------------------------------------------------------------------------------------------
+
 export function HomeView() {
-  return <>Home</>;
+  // const pageProgress = useScrollProgress();
+
+  return (
+    <>
+      <HomeHero />
+    </>
+  );
 }
