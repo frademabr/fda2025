@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 
-import { fAdd } from "src/utils/format-time";
+import { fAdd } from "@/utils/format-time";
 
 import { CONFIG } from "src/global-config";
 import { countries } from "src/assets/data";
@@ -74,7 +74,8 @@ const getJobLevel = (index: number) => {
 
 const getSalary = (index: number) => (index % 3 ? 12000 : "Competitive");
 
-const getLocation = (index: number) => countries.map((option) => option.label)[index + 1];
+const getLocation = (index: number) =>
+  countries.map((option) => option.label)[index + 1];
 
 export const _jobs = Array.from({ length: 12 }, (_, index) => ({
   id: _mock.id(index),

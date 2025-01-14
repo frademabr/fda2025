@@ -6,7 +6,7 @@ import { mergeClasses } from "minimal-shared/utils";
 import Link from "@mui/material/Link";
 import { styled, useTheme } from "@mui/material/styles";
 
-import { RouterLink } from "src/routes/components";
+import { RouterLink } from "@/routes/components";
 
 import { logoClasses } from "./classes";
 
@@ -20,16 +20,27 @@ export type LogoProps = LinkProps & {
 };
 
 export const Logo = forwardRef<HTMLAnchorElement, LogoProps>((props, ref) => {
-  const { className, href = "/", isSingle = false, disabled, sx, ...other } = props;
+  const {
+    className,
+    href = "/",
+    isSingle = false,
+    disabled,
+    sx,
+    ...other
+  } = props;
 
   const theme = useTheme();
 
   const singleLogo = (
-    <img src={`${CONFIG.assetsDir}/assets/images/home/logo-fradema-single.png`} />
+    <img
+      src={`${CONFIG.assetsDir}/assets/images/home/logo-fradema-single.png`}
+    />
   );
 
   const fullLogo = (
-    <img src={`${CONFIG.assetsDir}/assets/images/home/logo-fradema-branco.png`} />
+    <img
+      src={`${CONFIG.assetsDir}/assets/images/home/logo-fradema-branco.png`}
+    />
   );
 
   return (
