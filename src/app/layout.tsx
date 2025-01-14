@@ -9,6 +9,7 @@ import { ProgressBar } from "@/components/progress-bar";
 import { defaultSettings, SettingsDrawer } from "@/components/settings";
 import { themeConfig } from "@/theme";
 import { themeOverrides } from "@/theme/theme-overrides";
+import { CONFIG } from "@/global-config";
 
 //--------------------------------------------------------------------------------------
 
@@ -23,6 +24,12 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  icons: [
+    {
+      rel: "icon",
+      url: `${CONFIG.assetsDir}/assets/images/home/logo-fradema-single.png`,
+    },
+  ],
   title: "Fradema Consultoria Tributária",
   description: "Empresa Fradema de Consultoria Tributária",
 };

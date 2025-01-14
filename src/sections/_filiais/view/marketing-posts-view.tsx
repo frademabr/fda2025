@@ -8,11 +8,11 @@ import { _mock, _tags, _FiliaisPosts } from "src/_mock";
 
 import { Advertisement } from "../../advertisement";
 import { PostSidebar } from "../../blog/post-sidebar";
-import { FiliaisPosts } from "../posts/Filiais-posts";
-import { FiliaisNewsletter } from "../Filiais-newsletter";
+import { FiliaisPosts } from "../posts/marketing-posts";
+import { FiliaisNewsletter } from "../marketing-newsletter";
 import { PostSearchMobile } from "../../blog/post-search-mobile";
-import { FiliaisFeaturedPosts } from "../posts/Filiais-featured-posts";
-import { FiliaisLandingFreeSEO } from "../landing/Filiais-landing-free-seo";
+import { FiliaisFeaturedPosts } from "../posts/marketing-featured-posts";
+import { FiliaisLandingFreeSEO } from "../landing/marketing-landing-free-seo";
 
 // ----------------------------------------------------------------------
 

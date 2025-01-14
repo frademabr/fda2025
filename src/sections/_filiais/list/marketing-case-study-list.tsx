@@ -8,7 +8,7 @@ import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Pagination, { paginationClasses } from "@mui/material/Pagination";
 
-import { FiliaisCaseStudyItem } from "./Filiais-case-study-item";
+import { FiliaisCaseStudyItem } from "./marketing-case-study-item";
 
 // ----------------------------------------------------------------------
 
@@ -23,11 +23,17 @@ export function FiliaisCaseStudyList({ caseStudies, sx, ...other }: Props) {
 
   const categories = ["All", ...Array.from(new Set(getCategories))];
 
-  const dataFiltered = applyFilter({ inputData: caseStudies, query: currentTab });
+  const dataFiltered = applyFilter({
+    inputData: caseStudies,
+    query: currentTab,
+  });
 
-  const handleChangeTab = useCallback((event: React.SyntheticEvent, newValue: string) => {
-    setCurrentTab(newValue);
-  }, []);
+  const handleChangeTab = useCallback(
+    (event: React.SyntheticEvent, newValue: string) => {
+      setCurrentTab(newValue);
+    },
+    []
+  );
 
   return (
     <>
@@ -66,7 +72,10 @@ export function FiliaisCaseStudyList({ caseStudies, sx, ...other }: Props) {
 
       <Pagination
         count={10}
-        sx={{ pb: 10, [`& .${paginationClasses.ul}`]: { justifyContent: "center" } }}
+        sx={{
+          pb: 10,
+          [`& .${paginationClasses.ul}`]: { justifyContent: "center" },
+        }}
       />
     </>
   );

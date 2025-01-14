@@ -14,12 +14,12 @@ import { _testimonials } from "src/_mock";
 import { Markdown } from "src/components/markdown";
 import { CustomBreadcrumbs } from "src/components/custom-breadcrumbs";
 
-import { FiliaisNewsletter } from "../Filiais-newsletter";
-import { FiliaisTestimonial } from "../Filiais-testimonial";
-import { FiliaisLandingFreeSEO } from "../landing/Filiais-landing-free-seo";
-import { FiliaisCaseStudyListSimilar } from "../list/Filiais-case-study-list-similar";
-import { FiliaisCaseStudyDetailsGallery } from "../details/Filiais-case-study-details-gallery";
-import { FiliaisCaseStudyDetailsSummary } from "../details/Filiais-case-study-details-summary";
+import { FiliaisNewsletter } from "../marketing-newsletter";
+import { FiliaisTestimonial } from "../marketing-testimonial";
+import { FiliaisLandingFreeSEO } from "../landing/marketing-landing-free-seo";
+import { FiliaisCaseStudyListSimilar } from "../list/marketing-case-study-list-similar";
+import { FiliaisCaseStudyDetailsGallery } from "../details/marketing-case-study-details-gallery";
+import { FiliaisCaseStudyDetailsSummary } from "../details/marketing-case-study-details-summary";
 
 // ----------------------------------------------------------------------
 
@@ -49,7 +49,12 @@ export function FiliaisCaseStudyView({
             component="img"
             alt={caseStudy?.title}
             src={caseStudy?.heroUrl}
-            sx={{ width: 1, borderRadius: 2, objectFit: "cover", aspectRatio: "16/9" }}
+            sx={{
+              width: 1,
+              borderRadius: 2,
+              objectFit: "cover",
+              aspectRatio: "16/9",
+            }}
           />
 
           <CustomBreadcrumbs
@@ -61,7 +66,11 @@ export function FiliaisCaseStudyView({
             ]}
           />
 
-          <Grid container spacing={{ xs: 5, md: 8 }} direction={{ md: "row-reverse" }}>
+          <Grid
+            container
+            spacing={{ xs: 5, md: 8 }}
+            direction={{ md: "row-reverse" }}
+          >
             <Grid size={{ xs: 12, md: 4 }}>
               <FiliaisCaseStudyDetailsSummary
                 title={caseStudy?.title || ""}
@@ -74,7 +83,9 @@ export function FiliaisCaseStudyView({
 
             <Grid size={{ xs: 12, md: 8 }}>
               <Markdown content={caseStudy?.content || ""} />
-              <FiliaisCaseStudyDetailsGallery images={caseStudy?.galleryImgs || []} />
+              <FiliaisCaseStudyDetailsGallery
+                images={caseStudy?.galleryImgs || []}
+              />
             </Grid>
           </Grid>
         </Container>

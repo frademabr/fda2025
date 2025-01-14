@@ -84,7 +84,7 @@ export const _mock = {
     portrait: (index: number) =>
       `${CONFIG.assetsDir}/assets/images/portrait/portrait-${index + 1}.webp`,
     Filiais: (index: number) =>
-      `${CONFIG.assetsDir}/assets/images/Filiais/Filiais-${index + 1}.webp`,
+      `${CONFIG.assetsDir}/assets/images/marketing/marketing-${index + 1}.webp`,
   },
   video: (index: number) =>
     [

@@ -11,7 +11,7 @@ import {
   CarouselArrowBasicButtons,
 } from "src/components/carousel";
 
-import { PostItem } from "./Filiais-posts";
+import { PostItem } from "./marketing-posts";
 
 // ----------------------------------------------------------------------
 
@@ -31,15 +31,25 @@ export function FiliaisLatestPosts({ posts, sx, ...other }: Props) {
       sx={[{ py: { xs: 10, md: 15 } }, ...(Array.isArray(sx) ? sx : [sx])]}
       {...other}
     >
-      <Container sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <Container
+        sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      >
         <Box
-          sx={{ display: "flex", alignItems: "center", width: 1, mb: { xs: 5, md: 10 } }}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            width: 1,
+            mb: { xs: 5, md: 10 },
+          }}
         >
           <Typography component="h6" variant="h3" sx={{ flexGrow: 1 }}>
             Latest posts
           </Typography>
 
-          <CarouselArrowBasicButtons {...carousel.arrows} options={carousel.options} />
+          <CarouselArrowBasicButtons
+            {...carousel.arrows}
+            options={carousel.options}
+          />
         </Box>
 
         <Carousel carousel={carousel}>

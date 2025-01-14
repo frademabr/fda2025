@@ -5,17 +5,20 @@ import Grid from "@mui/material/Grid2";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 
-import { FiliaisNewsletter } from "../Filiais-newsletter";
-import { FiliaisContactForm } from "../contact/Filiais-contact-form";
-import { FiliaisContactInfo } from "../contact/Filiais-contact-info";
-import { FiliaisLandingFreeSEO } from "../landing/Filiais-landing-free-seo";
+import { FiliaisNewsletter } from "../marketing-newsletter";
+import { FiliaisContactForm } from "../contact/marketing-contact-form";
+import { MarketingContactInfo } from "../contact/marketing-contact-info";
+import { FiliaisLandingFreeSEO } from "../landing/marketing-landing-free-seo";
 
 // ----------------------------------------------------------------------
 
 export function FiliaisContactView() {
   return (
     <>
-      <Box component="section" sx={{ pt: { xs: 3, md: 10 }, pb: { xs: 10, md: 15 } }}>
+      <Box
+        component="section"
+        sx={{ pt: { xs: 3, md: 10 }, pb: { xs: 10, md: 15 } }}
+      >
         <Container>
           <Grid
             container
@@ -24,7 +27,7 @@ export function FiliaisContactView() {
             sx={{ justifyContent: { md: "space-between" } }}
           >
             <Grid size={{ xs: 12, md: 6, lg: 5 }}>
-              <FiliaisContactInfo />
+              <MarketingContactInfo />
             </Grid>
 
             <Grid size={{ xs: 12, md: 6, lg: 6 }}>

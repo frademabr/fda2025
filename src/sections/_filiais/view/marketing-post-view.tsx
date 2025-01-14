@@ -20,7 +20,12 @@ import { paths } from "src/routes/paths";
 import { fDate } from "src/utils/format-time";
 
 import { _socials, _FiliaisPosts } from "src/_mock";
-import { TwitterIcon, FacebookIcon, LinkedinIcon, InstagramIcon } from "src/assets/icons";
+import {
+  TwitterIcon,
+  FacebookIcon,
+  LinkedinIcon,
+  InstagramIcon,
+} from "src/assets/icons";
 
 import { Iconify } from "src/components/iconify";
 import { Markdown } from "src/components/markdown";
@@ -28,9 +33,9 @@ import { CustomBreadcrumbs } from "src/components/custom-breadcrumbs";
 
 import { PostTags } from "../../blog/post-tags";
 import { PostAuthor } from "../../blog/post-author";
-import { FiliaisNewsletter } from "../Filiais-newsletter";
-import { FiliaisLatestPosts } from "../posts/Filiais-latest-posts";
-import { FiliaisLandingFreeSEO } from "../landing/Filiais-landing-free-seo";
+import { FiliaisNewsletter } from "../marketing-newsletter";
+import { FiliaisLatestPosts } from "../posts/marketing-latest-posts";
+import { FiliaisLandingFreeSEO } from "../landing/marketing-landing-free-seo";
 
 // ----------------------------------------------------------------------
 
@@ -46,7 +51,7 @@ export function FiliaisPostView() {
     (event: React.ChangeEvent<HTMLInputElement>) => {
       setFavorite(event.target.checked);
     },
-    [],
+    []
   );
 
   const renderImage = () => (
@@ -74,11 +79,16 @@ export function FiliaisPostView() {
 
   const renderSocials = () => (
     <Box sx={{ gap: 1.5, display: "flex", mt: 5 }}>
-      <Box component="span" sx={{ lineHeight: "30px", typography: "subtitle2" }}>
+      <Box
+        component="span"
+        sx={{ lineHeight: "30px", typography: "subtitle2" }}
+      >
         Share:
       </Box>
 
-      <Box sx={{ gap: 1, display: "flex", alignItems: "center", flexWrap: "wrap" }}>
+      <Box
+        sx={{ gap: 1, display: "flex", alignItems: "center", flexWrap: "wrap" }}
+      >
         {_socials.map((social) => (
           <Button
             key={social.value}
@@ -110,7 +120,11 @@ export function FiliaisPostView() {
       slotProps={{ paper: { sx: { width: 220 } } }}
     >
       {_socials.map((social) => (
-        <MenuItem key={social.value} onClick={() => openSocial.onClose()} sx={{ gap: 1 }}>
+        <MenuItem
+          key={social.value}
+          onClick={() => openSocial.onClose()}
+          sx={{ gap: 1 }}
+        >
           {social.value === "twitter" && <TwitterIcon />}
           {social.value === "facebook" && <FacebookIcon />}
           {social.value === "instagram" && <InstagramIcon />}
@@ -134,7 +148,10 @@ export function FiliaisPostView() {
         }),
       ]}
     >
-      <Avatar src={post.author.avatarUrl} sx={{ mr: 2, width: 48, height: 48 }} />
+      <Avatar
+        src={post.author.avatarUrl}
+        sx={{ mr: 2, width: 48, height: 48 }}
+      />
 
       <Box sx={{ flexGrow: 1 }}>
         <Typography variant="subtitle2">{post.author.name}</Typography>
@@ -158,7 +175,10 @@ export function FiliaisPostView() {
         onChange={handleChangeFavorite}
         icon={<Iconify icon="solar:heart-outline" />}
         checkedIcon={<Iconify icon="solar:heart-bold" />}
-        inputProps={{ id: "favorite-checkbox", "aria-label": "Favorite checkbox" }}
+        inputProps={{
+          id: "favorite-checkbox",
+          "aria-label": "Favorite checkbox",
+        }}
       />
     </Box>
   );

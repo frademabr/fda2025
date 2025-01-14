@@ -9,19 +9,19 @@ import {
   _pricingFiliais,
 } from "src/_mock";
 
-import { FiliaisTeam } from "../Filiais-team";
-import { FiliaisPricing } from "./Filiais-pricing";
-import { FiliaisNewsletter } from "../Filiais-newsletter";
-import { FiliaisOurClients } from "../Filiais-our-clients";
-import { FiliaisTestimonial } from "../Filiais-testimonial";
-import { FiliaisLatestPosts } from "../posts/Filiais-latest-posts";
-import { FiliaisLandingHero } from "../landing/Filiais-landing-hero";
-import { FiliaisLandingFaqs } from "../landing/Filiais-landing-faqs";
-import { FiliaisLandingAbout } from "../landing/Filiais-landing-about";
-import { FiliaisLandingProcess } from "../landing/Filiais-landing-process";
-import { FiliaisLandingFreeSEO } from "../landing/Filiais-landing-free-seo";
-import { FiliaisLandingServices } from "../landing/Filiais-landing-services";
-import { FiliaisLandingCaseStudies } from "../landing/Filiais-landing-case-studies";
+import { FiliaisTeam } from "../marketing-team";
+import { FiliaisPricing } from "./marketing-pricing";
+import { FiliaisNewsletter } from "../marketing-newsletter";
+import { FiliaisOurClients } from "../marketing-our-clients";
+import { FiliaisTestimonial } from "../marketing-testimonial";
+import { FiliaisLatestPosts } from "../posts/marketing-latest-posts";
+import { FiliaisLandingHero } from "../landing/marketing-landing-hero";
+import { FiliaisLandingFaqs } from "../landing/marketing-landing-faqs";
+import { FiliaisLandingAbout } from "../landing/marketing-landing-about";
+import { FiliaisLandingProcess } from "../landing/marketing-landing-process";
+import { FiliaisLandingFreeSEO } from "../landing/marketing-landing-free-seo";
+import { FiliaisLandingServices } from "../landing/marketing-landing-services";
+import { FiliaisLandingCaseStudies } from "../landing/marketing-landing-case-studies";
 
 // ----------------------------------------------------------------------
 
