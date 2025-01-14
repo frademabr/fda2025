@@ -101,10 +101,11 @@ export const _productsTable = Array.from({ length: 12 }, (_, index) => ({
   item: NAMES[index],
   deliveryDate: _mock.time(index),
   price: _mock.number.price(index),
-  status: ["Completed", "To process", "Cancelled", "Return"][index] || "Completed",
+  status:
+    ["Completed", "To process", "Cancelled", "Return"][index] || "Completed",
 }));
 
-export const _productsCarousel = Array.from({ length: 10 }, (_, index) => ({
+export const _productsCarousel = Array.from({ length: 6 }, (_, index) => ({
   id: _mock.id(index),
   name: _mock.productName(index),
   caption: _mock.description(index), // description glare card, filiais.

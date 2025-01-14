@@ -5,7 +5,8 @@ import { CONFIG } from "src/global-config";
 
 // ----------------------------------------------------------------------
 
-const imagePath = (name: string) => `${CONFIG.assetsDir}/assets/images/menu/${name}`;
+const imagePath = (name: string) =>
+  `${CONFIG.assetsDir}/assets/images/menu/${name}`;
 
 export const pageLinks = [
   {
@@ -15,7 +16,10 @@ export const pageLinks = [
       { title: "Landing", path: paths.Filiais.root },
       { title: "Services", path: paths.Filiais.services },
       { title: "Case studies", path: paths.Filiais.caseStudies },
-      { title: "Case study", path: paths.Filiais.caseStudy(_caseStudies[0].id) },
+      {
+        title: "Case study",
+        path: paths.Filiais.caseStudy(_caseStudies[0].id),
+      },
       { title: "Posts", path: paths.Filiais.posts },
       { title: "Post", path: paths.Filiais.post },
       { title: "About", path: paths.Filiais.about },
@@ -108,7 +112,7 @@ export const pageLinks = [
 
 export const navData = [
   { title: "Home", path: "/" },
-  { title: "Filiais", path: paths.Filiais.caseStudies },
+  { title: "Filiais", path: "#" }, // paths.Filiais.caseStudies
   { title: "Serviços", path: "#" },
   { title: "Blog", path: "#" }, // paths.pages, children: pageLinks
   { title: "Sobre Nós", path: "#" },

@@ -51,7 +51,7 @@ const getCategory = (index: number) => {
 };
 
 const getGalleryImgs = () =>
-  Array.from({ length: 6 }, (_, index) => _mock.image.Filiais(index));
+  Array.from({ length: 4 }, (_, index) => _mock.image.Filiais(index));
 
 export const _caseStudies = TITLES.map((_, index) => ({
   id: _mock.id(index),
