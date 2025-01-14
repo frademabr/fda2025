@@ -22,37 +22,43 @@ type Props = BoxProps & {
 export function ElearningOurClients({ brands, sx, ...other }: Props) {
   const carousel = useCarousel(
     { loop: true, slidesToShow: "auto", slideSpacing: "80px" },
-    [AutoScroll({ playOnInit: true, speed: 0.5 })],
+    [AutoScroll({ playOnInit: true, speed: 0.5 })]
   );
 
   return (
     <Box
       component="section"
-      sx={[{ pt: 10, pb: { xs: 5, md: 10 } }, ...(Array.isArray(sx) ? sx : [sx])]}
+      sx={[
+        { pt: 10, pb: { xs: 5, md: 10 } },
+        ...(Array.isArray(sx) ? sx : [sx]),
+      ]}
       {...other}
     >
       <Container className="mt-20">
         <Box sx={{ textAlign: "center", mb: { xs: 5, md: 10 } }}>
-          <Typography variant="h2" sx={{ mb: 3 }}>
+          <h1 className="font-sans text-5xl font-extrabold mb-10">
             Sobre a Empresa
-          </Typography>
+          </h1>
 
           <Typography sx={{ color: "text.secondary" }}>
-            A Fradema Consultores Tributários está há <strong>36 anos no mercado</strong>,
-            possuindo vasta <strong>experiência e qualificação</strong> para pensar nas{" "}
-            <strong>melhores soluções</strong> em <strong>consultoria tributária</strong>{" "}
-            para o seu negócio. Com atuação <strong>desde 1988</strong>, a{" "}
+            A Fradema Consultores Tributários está há{" "}
+            <strong>36 anos no mercado</strong>, possuindo vasta{" "}
+            <strong>experiência e qualificação</strong> para pensar nas{" "}
+            <strong>melhores soluções</strong> em{" "}
+            <strong>consultoria tributária</strong> para o seu negócio. Com
+            atuação <strong>desde 1988</strong>, a{" "}
             <strong>Fradema Consultores Tributários </strong>
             possui{" "}
             <strong>
-              forte atuação em estratégias empresariais e procedimento administrativos
+              forte atuação em estratégias empresariais e procedimento
+              administrativos
             </strong>{" "}
             nas esferas federal, estadual e municipal, com{" "}
             <strong>filiais em todo o território nacional.</strong>
             Nossos escritórios estão localizados no{" "}
             <strong>
-              Distrito Federal, Bahia, Pernambuco, Espírito Santo, Minas Gerais, Rio de
-              Janeiro, Santa Catarina, São Paulo, Paraná e Amazonas
+              Distrito Federal, Bahia, Pernambuco, Espírito Santo, Minas Gerais,
+              Rio de Janeiro, Santa Catarina, São Paulo, Paraná e Amazonas
             </strong>
             .
           </Typography>

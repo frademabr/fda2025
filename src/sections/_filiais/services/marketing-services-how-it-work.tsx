@@ -51,7 +51,10 @@ export function FiliaisServicesHowItWork({ sx, ...other }: BoxProps) {
         (theme) => ({
           ...theme.mixins.bgGradient({
             images: [
-              `linear-gradient(to bottom, ${varAlpha(theme.vars.palette.common.blackChannel, 0)}, ${varAlpha(theme.vars.palette.common.blackChannel, 0)})`,
+              `linear-gradient(to bottom, ${varAlpha(
+                theme.vars.palette.common.blackChannel,
+                0
+              )}, ${varAlpha(theme.vars.palette.common.blackChannel, 0)})`,
               `url(${CONFIG.assetsDir}/assets/images/home/galaxybig2.jpg)`,
             ],
           }),
@@ -89,7 +92,10 @@ export function FiliaisServicesHowItWork({ sx, ...other }: BoxProps) {
           (theme) => ({
             ...theme.mixins.bgGradient({
               images: [
-                `linear-gradient(to bottom, ${varAlpha(theme.vars.palette.common.blackChannel, 0)}, ${varAlpha(theme.vars.palette.common.blackChannel, 0)})`,
+                `linear-gradient(to bottom, ${varAlpha(
+                  theme.vars.palette.common.blackChannel,
+                  0
+                )}, ${varAlpha(theme.vars.palette.common.blackChannel, 0.3)})`,
                 `url(${CONFIG.assetsDir}/assets/images/home/nyblue.png)`,
               ],
             }),

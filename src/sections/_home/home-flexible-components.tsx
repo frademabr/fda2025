@@ -74,15 +74,17 @@ export function HomeFlexibleComponents() {
               Nossos serviços você encontra aqui
             </p>
             <p className="mt-6 text-lg/8 text-gray-300">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-              perferendis suscipit eaque, iste dolor cupiditate blanditiis.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+              impedit perferendis suscipit eaque, iste dolor cupiditate
+              blanditiis.
             </p>
+            {/* border-gray-600 border-opacity-50 */}
           </div>
-          <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base/7 text-gray-300  sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-16">
+          <dl className="mx-auto mt-16  grid max-w-2xl grid-cols-1 gap-8 text-base/7 text-gray-300  sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-16">
             {features.map((feature) => (
               <div
                 key={feature.name}
-                className="relative pl-9 border-solid border border-gray-600 border-opacity-50 py-7 px-5 rounded-xl hover:bg-gray-800 hover:bg-opacity-70 hover:shadow-white hover:shadow-md"
+                className="relative pl-9   py-7 px-5 rounded-xl hover:bg-gray-800 hover:bg-opacity-70 hover:shadow-white hover:shadow-md"
               >
                 <dt className="inline font-semibold text-white">
                   <feature.icon
