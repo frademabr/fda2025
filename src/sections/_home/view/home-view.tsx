@@ -7,6 +7,7 @@ import { FiliaisServicesHowItWork } from "@/sections/_filiais/services/marketing
 import { HomeFlexibleComponents } from "../home-flexible-components";
 import { EcommerceLandingHero } from "@/sections/_ecommerce/landing/ecommerce-landing-hero";
 import { FiliaisContact } from "@/sections/_filiais/contact/marketing-contact";
+import { HomeFAQs } from "../home-faqs";
 
 //------------------------------------------------------------------------------------------
 
@@ -22,6 +23,8 @@ export function HomeView() {
       <EcommerceLandingHero />
 
       <FiliaisContact />
+
+      <HomeFAQs />
     </>
   );
 }

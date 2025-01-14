@@ -143,13 +143,13 @@ export function FiliaisContact() {
         <div className="flex w-full justify-center ml-10 lg:mt-2.5">
           <div className="relative flex w-full min-w-[20rem] max-w-[30rem] flex-col items-center overflow-visible md:min-w-[24rem]">
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="mb-6 w-full space-y-6 rounded-xl border-border bg-background bg-gray-800  px-6 py-10 shadow-md shadow-gray-400">
+              <div className="mb-6 w-full space-y-6 rounded-xl border-border bg-gray-800 px-6 py-10 shadow-md shadow-gray-400">
                 <div>
                   <div className="mb-2.5 text-sm font-medium">
                     <label htmlFor="nome">Nome Completo</label>
                   </div>
                   <Input
-                    className="text-slate-800"
+                    className="text-slate-200 border-gray-500 opacity-75"
                     {...register("nome")}
                     id="nome"
                     name="nome"
@@ -165,7 +165,7 @@ export function FiliaisContact() {
                     <span className="text-muted-foreground">(Opcional)</span>
                   </div>
                   <Input
-                    className="text-slate-800"
+                    className="text-slate-200 border-gray-500 opacity-75"
                     {...register("empresa")}
                     id="empresa"
                     name="empresa"
@@ -178,7 +178,7 @@ export function FiliaisContact() {
                     <label htmlFor="cel">Celular</label>
                   </div>
                   <Input
-                    className="text-slate-800"
+                    className="text-slate-200 border-gray-500 opacity-75"
                     {...register("cel")}
                     type="number"
                     id="cel"
@@ -196,7 +196,7 @@ export function FiliaisContact() {
                       {/* <span className="text-muted-foreground"></span> */}
                     </div>
                     <Input
-                      className="text-slate-800"
+                      className="text-slate-200 border-gray-500 opacity-75"
                       {...register("email")}
                       id="email"
                       name="email"
@@ -213,11 +213,14 @@ export function FiliaisContact() {
                     </div>
                     <Select {...register("filiais")}>
                       <SelectTrigger
-                        className="text-slate-800"
+                        className="text-slate-200 border-gray-500 opacity-75"
                         id="filiais"
                         name="filiais"
                       >
-                        <SelectValue placeholder="Selecione" />
+                        <SelectValue
+                          className="opacity-75"
+                          placeholder="Selecione"
+                        />
                       </SelectTrigger>
 
                       <SelectContent>
@@ -262,7 +265,7 @@ export function FiliaisContact() {
                     </div>
                     <Select>
                       <SelectTrigger
-                        className="text-slate-800"
+                        className="text-slate-200 border-gray-500 opacity-75"
                         id="outros"
                         name="outros"
                       >

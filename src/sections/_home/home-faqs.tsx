@@ -237,7 +237,7 @@ export function HomeFAQs({ sx, ...other }: BoxProps) {
 
   return (
     <>
-      <Divider soft my-6 />
+      <Divider soft />
       <Box
         component="section"
         sx={[
