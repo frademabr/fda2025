@@ -143,7 +143,7 @@ export function FiliaisContact() {
         <div className="flex w-full justify-center ml-10 lg:mt-2.5">
           <div className="relative flex w-full min-w-[20rem] max-w-[30rem] flex-col items-center overflow-visible md:min-w-[24rem]">
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="mb-6 w-full space-y-6 rounded-xl border-gray-400 border-border bg-background bg-gray-800  px-6 py-10 shadow-xl">
+              <div className="mb-6 w-full space-y-6 rounded-xl border-border bg-background bg-gray-800  px-6 py-10 shadow-md shadow-gray-400">
                 <div>
                   <div className="mb-2.5 text-sm font-medium">
                     <label htmlFor="nome">Nome Completo</label>
