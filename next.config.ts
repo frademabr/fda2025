@@ -15,7 +15,7 @@ const nextConfig = {
       transform: "@mui/lab/{{member}}",
     },
   },
-  webpack(config) {
+  webpack(config: { module: { rules: { test: RegExp; use: string[] }[] } }) {
     config.module.rules.push({
       test: /\.svg$/,
       use: ["@svgr/webpack"],

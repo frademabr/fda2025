@@ -8,11 +8,11 @@ import Typography from "@mui/material/Typography";
 
 import { _testimonials, _FiliaisPosts } from "src/_mock";
 
-import { FiliaisNewsletter } from "../Filiais-newsletter";
-import { FiliaisTestimonial } from "../Filiais-testimonial";
-import { FiliaisLatestPosts } from "../posts/Filiais-latest-posts";
-import { FiliaisCaseStudyList } from "../list/Filiais-case-study-list";
-import { FiliaisLandingFreeSEO } from "../landing/Filiais-landing-free-seo";
+import { FiliaisNewsletter } from "../marketing-newsletter";
+import { FiliaisTestimonial } from "../marketing-testimonial";
+import { FiliaisLatestPosts } from "../posts/marketing-latest-posts";
+import { FiliaisCaseStudyList } from "../list/marketing-case-study-list";
+import { FiliaisLandingFreeSEO } from "../landing/marketing-landing-free-seo";
 
 // ----------------------------------------------------------------------
 
