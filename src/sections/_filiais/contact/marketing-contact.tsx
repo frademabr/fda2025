@@ -78,11 +78,12 @@ export function FiliaisContact() {
         <div className="ml-20 w-full pb-10 md:space-y-10 md:pb-0">
           <div className="space-y-4 md:max-w-[40rem]">
             <h1 className="text-4xl font-bold lg:text-5xl ml-3">
-              Fale com um de nossos <span className="text-blue-700">Consultores</span>
+              Fale com um de nossos{" "}
+              <span className="text-blue-700">Consultores</span>
             </h1>
             <div className="text-muted-foreground md:text-base lg:text-lg lg:leading-7 ml-3">
-              In non libero bibendum odio pellentesque ullamcorper. Aenean condimentum,
-              dolor commodo pulvinar bibendum.
+              In non libero bibendum odio pellentesque ullamcorper. Aenean
+              condimentum, dolor commodo pulvinar bibendum.
             </div>
           </div>
           <div className="hidden md:block">
@@ -106,15 +107,21 @@ export function FiliaisContact() {
                   <p className="text-sm font-semibold ml-3">O que esperar:</p>
                   <div className="flex items-center space-x-2.5">
                     <Check className="size-5 shrink-0 text-muted-foreground" />
-                    <p className="text-sm">Consultores altamente qualificados</p>
+                    <p className="text-sm">
+                      Consultores altamente qualificados
+                    </p>
                   </div>
                   <div className="flex items-center space-x-2.5">
                     <Check className="size-5 shrink-0 text-muted-foreground" />
-                    <p className="text-sm">Estratégias para melhorar seu negócio</p>
+                    <p className="text-sm">
+                      Estratégias para melhorar seu negócio
+                    </p>
                   </div>
                   <div className="flex items-center space-x-2.5">
                     <Check className="size-5 shrink-0 text-muted-foreground" />
-                    <p className="text-sm">Respostas para todos os seus casos de uso</p>
+                    <p className="text-sm">
+                      Respostas para todos os seus casos de uso
+                    </p>
                   </div>
                 </div>
               </div>
@@ -216,10 +223,14 @@ export function FiliaisContact() {
                       <SelectContent>
                         <SelectItem value="rj">Fradema - RJ</SelectItem>
                         <SelectItem value="sp">Fradema - SP</SelectItem>
-                        <SelectItem value="campinas">Fradema - Campinas</SelectItem>
+                        <SelectItem value="campinas">
+                          Fradema - Campinas
+                        </SelectItem>
                       </SelectContent>
                       {errors?.filiais?.message && (
-                        <p className="text-red-700 mb-4">{errors.filiais.message}</p>
+                        <p className="text-red-700 mb-4">
+                          {errors.filiais.message}
+                        </p>
                       )}
                     </Select>
                   </div>
@@ -244,16 +255,24 @@ export function FiliaisContact() {
                     <div className="mb-2.5 text-sm font-medium">
                       <label htmlFor="id">
                         Como descobriu a Empresa ?{" "}
-                        <span className="text-muted-foreground">(Opcional)</span>
+                        <span className="text-muted-foreground">
+                          (Opcional)
+                        </span>
                       </label>
                     </div>
                     <Select>
-                      <SelectTrigger className="text-slate-800" id="outros" name="outros">
+                      <SelectTrigger
+                        className="text-slate-800"
+                        id="outros"
+                        name="outros"
+                      >
                         <SelectValue placeholder="Selecione" />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="web">Web</SelectItem>
-                        <SelectItem value="clientes">Outros clientes</SelectItem>
+                        <SelectItem value="clientes">
+                          Outros clientes
+                        </SelectItem>
                         <SelectItem value="redes">Redes sociais</SelectItem>
                         <SelectItem value="outros">Outros</SelectItem>
                       </SelectContent>
@@ -268,8 +287,8 @@ export function FiliaisContact() {
                       Enviar formulário
                     </Button>
                     <div className="text-xs text-muted-foreground">
-                      Seus dados serão vistos e armazenados somente pela empresa. Para
-                      saber mais, leia nossa{" "}
+                      Seus dados serão vistos e armazenados somente pela
+                      empresa. Para saber mais, leia nossa{" "}
                       <a href="#" className="underline">
                         política de segurança
                       </a>
